@@ -40,8 +40,7 @@ jobs:
      # run: sudo apt install gitleaks -y
     - name: Gitleaks Code Scan
       uses: gitleaks/gitleaks-action@v2
-      with :
-        args : detect ==source . --report=path gitleaks-report.json --report-format json
+      
       #run: gitleaks detect source . -r gitleaks-report.json -f json
 
   test:
